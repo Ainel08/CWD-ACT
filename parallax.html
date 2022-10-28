@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Parallax</title>
+</head>
+<br></br>
+<h1 class="heade center red-text">Parallax</h1>
+<body>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img class="responsive-img" src="https://push-data.abs-cbn.com/dev/push/media/2022-july/070922/aespa-continues-to-break-records-with-latest-album.jpg?ext=.jpg" alt="">
+    </div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header red-text center">AESPA</h2>
+      <a class="btn grey darken-3 waves-effect waves-light"
+       onclick="M.toast({html: 'BLACK MAMBA',
+       inDuration: 1000,
+       completeCallback: function () {
+        alert('Your toast was dismissed');
+       },
+       classes: 'rounded'
+      })">Toast</a>
+      <a class="btn tooltipped amber" data-position="Bottom" data-tooltip="I am a tooltip">Hover me</a>
+      <p> 
+         Aespa is a South Korean girl group formed by SM Entertainment. The group consists of four members: Karina, Giselle, Winter, and Ningning. They debuted on November 17, 2020, with the single "Black Mamba".</p>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img class="responsive-img" src="https://cdn.filestackcontent.com/B5z2jh8XSv2i5ul8026o/convert?cache=true&crop=0%2C0%2C1920%2C960&crop_first=true&quality=90&w=1920" alt="">
+    </div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header red-text center">GIRLS</h2>
+      <a href="https://aespa-official.jp/" class="btn grey darken-3 waves-effect waves-light" 
+      onclick="">Read more</a>
+      <p>Aespa is a South Korean girl group formed by SM Entertainment. The group consists of four members: Karina, Giselle, Winter, and Ningning. They debuted on November 17, 2020, with the single "Black Mamba".</p>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      //Init Parallax
+    $('.parallax').parallax({
+      responsiveThreshold: 0
+    });
+    // Init Tooltip
+    $('.tooltipped').tooltip({
+      exitDelay: 1000
+    });
+  });
+  </script>
+</body>
+</html>
